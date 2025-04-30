@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index2.js" defer></script>
+    <style>
+        * {
+            font-weight: 100;
+            letter-spacing: 0.3px;
+        }
+        @font-face {
+            font-family: 'NeueReg';
+            src: url('fonts/NeueMontreal-Regular.OTF');
+        }
+        @font-face {
+            font-family: 'NeueMed';
+            src: url('fonts/NeueMontreal-Medium.OTF');
+        }
+
+    </style>
+</head>
+<!-- bg-gradient-to-b from-[#F3F3F3] to-white -->
+<body class="min-h-screen" style="background: linear-gradient(180deg, #f7f7f7 80%, #e6ebf2 100%)">
+    <div class="w-full flex justify-center py-10 select-none fixed z-50 top-0 left-0">
+        <nav class="flex text-sm w-[800px] items-center bg-white mix-blend-exclusion py-1.5 pr-1.5 m-0 pl-5 border border-[rgba(0, 0, 0, 0.1)] justify-between rounded-full" style="font-family: 'NeueReg';">
+            <h1>Víctor Manuel</h1>
+            <div class="flex items-center">
+                <ul class="flex">
+                    <li class="px-3 cursor-pointer"><span class="text-[#B0B0B0]">{ </span>Inicio<span class="text-[#B0B0B0]"> }</span></li>
+                    <li class="px-3 cursor-pointer"><span class="text-[#B0B0B0]">{ </span>Sobre mí<span class="text-[#B0B0B0]"> }</span></li>
+                    <li class="px-3 cursor-pointer"><span class="text-[#B0B0B0]">{ </span>Mí valor en tu empresa<span class="text-[#B0B0B0]"> }</span></li>
+                    <li class="px-3 cursor-pointer"><span class="text-[#B0B0B0]">{ </span>Experiencia<span class="text-[#B0B0B0]"> }</span></li>
+                    <li class="px-3 cursor-pointer"><span class="text-[#B0B0B0]">{ </span>Proyectos<span class="text-[#B0B0B0]"> }</span></li>
+                </ul>
+                <hr>
+                <button class="cursor-pointer bg-transparent rounded-full py-2 px-5 border border-[rgba(0, 0, 0, 0.1)]" style="box-shadow: rgba(0, 0, 0, 0.01) -0.474223px 0.474223px 0.536522px -0.2px, rgba(0, 0, 0, 0.01) -1.29143px 1.29143px 1.46109px -0.4px, rgba(0, 0, 0, 0.016) -2.83552px 2.83552px 3.20803px -0.6px, rgba(0, 0, 0, 0.024) -6.29421px 6.29421px 7.12109px -0.8px, rgba(0, 0, 0, 0.04) -16px 16px 18.1019px -1px;">
+                    <span>Contacto</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="justify-center relative flex flex-grow pt-32 px-4 flex-col items-center gap-11">
+        <div class="flex flex-col items-center gap-5">
+            <div class="flex">
+                <!-- w-31.5 h-31.5 -->
+                <div class="relative w-[126px] h-[126px] -rotate-6" style="perspective: 400px;">
+                    <div class="h-full w-full overflow-hidden rounded-2xl shadow-xs shadow-slate-900/30">
+                        <img class="rounded-2xl object-cover" src="images/photo2.jpg" alt="photo">
+                    </div>
+                </div>
+                <div class="relative w-[126px] h-[126px] rotate-12" style="perspective: 400px;">
+                    <div class="h-full w-full overflow-hidden rounded-2xl shadow-xs shadow-slate-900/30">
+                        <img class="rounded-2xl" src="images/photo1.jpg" alt="photo">
+                    </div>
+                </div>
+                <!-- w-31.5 h-31.5 -->
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <span class="text-lg font-extralight text-[#006CFF]" style="font-family: 'NeueReg';">¡Hola!, bienvenido</span>
+                <div class="flex flex-col gap-6">
+                    <h1 class="text-6xl text-center" style="font-family: 'NeueMed';">Soy Víctor Manuel,<br>desarrollador web full stack</h1>
+                    <p class="text-base text-center max-w-[38rem] leading-normal mx-auto text-black" style="font-family: 'NeueReg';">Mi misión es dar vida a tus ideas en el mundo digital. A través de la tecnología y la creatividad, construyo experiencias que conectan y logran resultados significativos.</p>
+                </div>
+            </div>
+        </div>
+        <button class="cursor-pointer bg-black flex items-center rounded-full p-1.5 text-white" style="font-family: 'NeueReg';">
+            <span class="text-base px-3">Trabajemos juntos</span>
+            <div class="bg-white/30 rounded-full w-6 h-6 flex items-center justify-center">
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6.5H13M13 6.5L8.2 2M13 6.5L8.2 11" stroke="rgba(255, 255, 255, 0.74)" stroke-width="1.5" stroke-linecap="square"/>
+                </svg>
+            </div>
+        </button>
+    </div>
+    <div class="mt-7 flex justify-center">
+        <div class="flex flex-col gap-8 items-center w-fit">
+            <div class="flex items-start w-full" style="font-family: 'NeueReg';">
+                <span class="w-fit py-1.5 text-sm px-4 border border-black/5 rounded-full shadow-lg">
+                    Tecnologías
+                </span>
+            </div>
+            <div class="tecnologies flex gap-8">
+                <!-- HTML -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#EF652A] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">
+                            <img class="filter drop-shadow-xl shadow-black" src="images/technologies/html.svg" alt="html">
+                        </div>
+                    </div>
+                </div>
+                <!-- CSS -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#264DE4] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">
+                            <img class="filter drop-shadow-2xl shadow-black" src="images/technologies/css.svg" alt="css">
+                        </div>
+                    </div>
+                </div>
+                <!-- JAVASCRIPT -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#F7DF1E] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img class="filter drop-shadow-xl shadow-black" src="images/technologies/javascript.svg" alt="javascript">  
+                        </div>
+                    </div>
+                </div>
+                <!-- TYPESCRIPT -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#3178C6] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img class="filter drop-shadow-xl shadow-black" src="images/technologies/typescript.svg" alt="typescript">
+                        </div>
+                    </div>
+                </div>
+                <!-- REACT -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#61DAFB] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img class="filter drop-shadow-xl shadow-black" src="images/technologies/react.svg" alt="react">
+                        </div>
+                    </div>
+                </div>
+                <!-- PHP -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#777BB3] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img class="filter drop-shadow-2xl shadow-black" src="images/technologies/php.svg" alt="php">
+                        </div>
+                    </div>
+                </div>
+                <!-- figma -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] w-[110px] rounded-[20px] border border-[#0ACF83] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img src="images/technologies/figma.png" alt="figma">  
+                        </div>
+                    </div>
+                </div>
+                <!-- Angular -->
+                <div>
+                    <!-- h-27 w-27 -->
+                    <div class="h-[110px] transform-gpu w-[110px] rounded-[20px] border border-[#0ACF83] bg-white p-2">
+                        <div class="bg-[#F2F2F2] rounded-xl h-full flex items-center justify-center border-2 border-[#5C5C5C]/10" style="box-shadow: rgba(165, 174, 184, 0.32) 0px 2px 1.5px 0px inset;">    
+                            <img src="images/technologies/angular.svg" alt="figma">  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center flex-col gap-20">
+        <h2 class="pt-28 px-28 text-5xl flex justify-center text-center" style="font-family: 'NeueMed';">
+            Te presento algunos<br>
+            de mis proyectos
+        </h2>
+        <div class="flex items-center flex-col gap-10">
+            <div class="bg-white py-4 pr-4 pl-7 flex gap-8 border w-fit border-black/10 rounded-[32px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px -6px;">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <span class="text-sm mb-2 text-gray-500" style="font-family: 'NeueReg';">2025</span>
+                        <h3 class="text-4xl mb-4" style="font-family: 'NeueMed';">SWANEST</h3>
+                        <div class="flex flex-col max-w-xl">
+                            <p class="text-base leading-snug text-[#353535]" style="font-family: 'NeueReg';">
+                                Aplicación de citas creada en colaboración con dos compañeros, diseñada para ofrecer 
+                                una experiencia moderna y auténtica. Integra funcionalidades clave como chat, match 
+                                y la creación de perfiles, además de contar con una interfaz intuitiva que se distingue 
+                                por su diseño innovador. Se implementaron diversas librerías y tecnologías que optimizan 
+                                tanto el diseño como la experiencia del usuario.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="text-xs flex gap-2 flex-wrap max-w-xs uppercase" style="font-family: 'NeueReg';">
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Figma</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Symfony</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Gsap</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Angular</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Tailwind</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Typescript</li>
+                    </ul>
+                </div>
+                <!-- w-xl h-102 -->
+                <div class="w-[576px] h-96 border border-black rounded-3xl">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="bg-white py-4 pr-4 pl-7 flex gap-8 border w-fit border-black/10 rounded-[32px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px -6px;">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <span class="text-sm mb-2 text-gray-500" style="font-family: 'NeueReg';">2023</span>
+                        <h3 class="text-4xl mb-4" style="font-family: 'NeueMed';">BLOG</h3>
+                        <div class="flex flex-col max-w-xl">
+                            <p class="text-base leading-snug text-[#353535]" style="font-family: 'NeueReg';">
+                                Aplicación web desarrollada junto a dos compañeros, y también mi primer proyecto en el ámbito 
+                                del desarrollo. Se trata de una plataforma centrada en el mundo de los videojuegos, pensada para 
+                                ofrecer información y noticias actualizadas, que cuenta con un diseño que se aleja de lo convencional. 
+                                Su estética está cuidadosamente alineada con la temática gamer, buscando no solo informar, sino también 
+                                conectar e impactar visualmente al usuario desde el primer momento.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="text-xs flex gap-2 uppercase" style="font-family: 'NeueReg';">
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Laravel</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Livewire</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">CSS</li>
+                    </ul>
+                </div>
+                <!-- w-xl h-102 -->
+                <div class="w-[576px] h-96 border border-black rounded-3xl">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="bg-white py-4 pr-4 pl-7 flex gap-8 border w-fit border-black/10 rounded-[32px]" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px -6px;">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <span class="text-sm mb-2 text-gray-500" style="font-family: 'NeueReg';">2023</span>
+                        <h3 class="text-4xl mb-4" style="font-family: 'NeueMed';">EVENTZONEG</h3>
+                        <div class="flex flex-col max-w-xl">
+                            <p class="text-base leading-snug text-[#353535]" style="font-family: 'NeueReg';">
+                                Aplicación web desarrollada junto a dos compañeros, y también mi primer proyecto en el ámbito 
+                                del desarrollo. Se trata de una plataforma centrada en el mundo de los videojuegos, pensada para 
+                                ofrecer información y noticias actualizadas, que cuenta con un diseño que se aleja de lo convencional. 
+                                Su estética está cuidadosamente alineada con la temática gamer, buscando no solo informar, sino también 
+                                conectar e impactar visualmente al usuario desde el primer momento.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="text-xs flex gap-2 uppercase" style="font-family: 'NeueReg';">
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">Figma</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">HTML</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">CSS</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">JavaScript</li>
+                        <li class="py-1.5 px-3.5 border border-gray-400 rounded-full">PHP</li>
+                    </ul>
+                </div>
+                <!-- w-xl h-102 -->
+                <div class="w-[576px] h-96 border border-black rounded-2xl">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center gap-20 py-28 px-5">
+        <div class="flex flex-col gap-5">
+            <div class="border border-black h-52 w-80 rounded-2xl">
+                <img src="" alt="">
+            </div>
+            <div class="border border-black h-72 w-80 rounded-2xl">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div>
+            <h2 class="text-5xl mb-7" style="font-family: 'NeueMed';">Sobre mí</h2>
+            <div class="max-w-3xl text-base" style="font-family: 'NeueReg';">
+                <p class="mb-4">
+                    Soy Víctor Manuel, tengo 20 años y soy originario de Colombia, un país lleno de belleza natural 
+                    y una gran riqueza cultural. Hace cinco años me mudé a Barcelona junto a mi madre, una ciudad que 
+                    desde entonces se ha convertido en mi hogar y escenario de mi crecimiento personal y profesional.
+                </p>
+                <p class="mb-4">
+                    A lo largo de este tiempo, he vivido experiencias que me han aportado mucho. Aprendí catalán, lo que 
+                    me ha permitido integrarme mejor y conectar mejor con la cultura local. También estudié interpretación, 
+                    algo que siempre me había llamado la atención y que finalmente me animé a hacer.
+                </p>
+                <p class="mb-4">
+                    Desde pequeño he sentido una fuerte atracción por la tecnología, y la programación, en particular, siempre 
+                    me generó mucha curiosidad por lo que decidí hace dos años empezar a formarme en este campo, y desde entonces 
+                    no he dejado de aprender y trabajar en proyectos que me permitan seguir creciendo como desarrollador.
+                </p>
+                <p class="mb-4">
+                    Lo que más me gusta de programar es que une lógica, creatividad y la posibilidad de construir soluciones útiles 
+                    a problemas reales. Me gusta pensar en cada proyecto como una oportunidad para aportar valor, con ideas claras, 
+                    funcionales y bien pensadas.
+                </p>
+                <p>
+                    Actualmente sigo formándome, con entusiasmo y muchas ganas de seguir creciendo, desarrollando proyectos y convirtiendo 
+                    ideas en soluciones reales.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black flex flex-col items-center text-center p-20 text-white">
+        <h2 class="text-5xl mb-9" style="font-family: 'NeueMed';">Mí valor en tu empresa</h2>
+        <div class="max-w-6xl">
+            <p class="text-2xl">Soy desarrollador web con una fuerte pasión por crear experiencias digitales que no solo funcionen bien, sino que 
+                también sean visualmente atractivas. Cuento con un sentido agudo para el diseño, lo que me permite prestar especial atención a los 
+                aspectos de UI y UX, asegurando que cada proyecto no solo cumpla con los objetivos técnicos, sino que también ofrezca una estética 
+                agradable y una navegación intuitiva.
+            </p>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="max-w-6xl flex">
+            <h2 class="text-5xl mb-9" style="font-family: 'NeueMed';">Experiencia</h2>
+            <div class="flex  gap-40">
+                <div>
+                    <h3>Desarrollador full stack</h3>
+                    <p>Strategying</p>
+                    <span>Barcelona</span>
+                    <span>2024 - 2025</span>
+                </div>
+                <p>
+                    Implementé soluciones web robustas y escalables utilizando el framework Laravel junto con Livewire, desarrollando componentes 
+                    interactivos en tiempo real que mejoraron significativamente la experiencia de usuario. Diseñé e integré sistemas de autenticación 
+                    seguros, interfaces de formularios dinámicos y módulos personalizados adaptados a necesidades específicas de negocio.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
